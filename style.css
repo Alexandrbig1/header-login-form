@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Cabin", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #525561;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing {
+  width: 95%;
+  height: 90%;
+  background: linear-gradient(to right,
+      rgb(39, 42, 55) 40%,
+      rgba(39, 42, 55, 0.8)),
+    url(images/bg1.jpg) center no-repeat;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 2.4rem;
+  left: 0;
+}
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 0 5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: #1d90f5;
+  border-radius: 50%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i {
+  color: #fff;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  margin-right: 1.2rem;
+}
+
+.nav-item {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #696b70;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #ccc;
+}
+
+.banner {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  transition: all 0.5s 0.5s;
+}
+
+.change .banner {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.banner h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.banner h1 span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1d90f5;
+  margin-top: 4rem;
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.change .contact {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s 0.5s;
+}
+
+.contact h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #696b70;
+}
+
+.contact h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin: 1.2rem 0;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #696b70;
+  margin-bottom: 3rem;
+}
+
+.contact p a {
+  color: #1d90f5;
+}
+
+.input-group {
+  width: 40rem;
+  height: 4.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  height: 100%;
+  background-color: #323644;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  color: #ccc;
+  font-size: 1.4rem;
+  /* transition: opacity 0.5s; */
+}
+
+.hide .input-group:nth-child(1),
+.hide .input-group:nth-child(2) {
+  display: none;
+}
+
+.input-group input:focus {
+  background-color: #3d404b;
+  border: 0.2rem solid #1d90f5;
+}
+
+.input-group i {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+.btn-group {
+  width: 40rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.contact-btn {
+  width: 46%;
+  height: 100%;
+  border-radius: 4rem;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-btn:nth-child(1) {
+  background-color: #3d404b;
+}
+
+.contact-btn:nth-child(2) {
+  background-color: #1d90f5;
+}
+
+.logo-bottom {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #1d90f5;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-bottom i {
+  font-size: 2.4rem;
+  color: #fff;
+}
